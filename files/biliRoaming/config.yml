@@ -1,0 +1,100 @@
+# 调试模式
+debug: true
+# 监听端口
+port: 80
+
+# 黑白名单模式
+# 0 - 禁用
+# 1 - 黑白名单
+blockType: 1
+
+# 设置最低漫游版本，详情看哔哩漫游仓库 versionCode
+roamingMinVer: 0
+
+# 替换泰区 aid (评论投币) / cid (弹幕)
+thRedirect:
+  aid: 0
+  cid: 0
+
+# 各用户(uid)限制器
+limiter:
+  # 每秒请求限制
+  limit: 2
+  # 每秒突发求请求限制
+  burst: 1
+
+# 搜索限制器
+searchLimiter:
+  # 每秒请求限制
+  limit: 1
+  # 每秒突发求请求限制
+  burst: 1
+
+# 自定义搜索强制插入内容
+customSearch:
+  # 插入的 json 内容
+  data: ''
+  # 插入的 json 内容
+  webData: ''
+
+# 自定义插入字幕
+customSubtitle:
+  apiUrl: 'https://example.com/path?season_id=%d'
+  teamName: '蒙古上单字幕组'
+
+# 缓存时间
+# 实例："1h1m4s" / "5m1s" / "4s"
+cache:
+  # 用户 key
+  accessKey: 168h
+  # 用户资料(uid 和 大会员状态)
+  user: 168h
+  # 播放链接
+  playUrl: 15m
+  # 泰区 season
+  thSeason: 15m
+  # 泰区字幕(兼容老版本)
+  thSubtitle: 15m
+
+# 代理
+proxy:
+  cn: socks5://127.0.0.1:7890
+  hk: socks5://127.0.0.1:7891
+  tw: socks5://127.0.0.1:7892
+  th: socks5://127.0.0.1:7893
+
+# 反代域名
+reverse:
+  cn: api.bilibili.com
+  hk: api.bilibili.com
+  tw: api.bilibili.com
+  th: app.biliintl.com
+
+# 反代搜索域名
+reverseSearch:
+  cn: app.bilibili.com
+  hk: app.bilibili.com
+  tw: app.bilibili.com
+  th: api.biliintl.com
+
+# 反代网页搜索域名
+reverseWebSearch:
+  cn: api.bilibili.com
+  hk: api.bilibili.com
+  tw: api.bilibili.com
+
+# 鉴权 + 缓存
+auth:
+  cn: true
+  hk: true
+  tw: true
+  th: true
+
+# 数据库
+postgreSQL:
+  host: 'top2.nearest.of.biliroaming-db.internal'
+  user: 'biliroaming'
+  password: 'OKrnKC2ydvhLoDy'
+  # passwordFile: '/run/secrets/db-password'
+  dbName: 'biliroaming'
+  port: 5432
