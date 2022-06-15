@@ -3,5 +3,5 @@ if (response) {
     undefined;
 }
 else {
-    window.location.href = 'https://bili33.top';
+    window.location = 'https://bili33.top';
 }
