@@ -9,7 +9,7 @@
 var $ = document.getElementById("Snackbar");
 
 if (window.location.pathname.includes('CTF')){
-    alert('你正在浏览CTF相关内容，请注意：未经允许的入侵均违法！！！')
+    alert('看起来你正在浏览CTF相关内容\n请注意：未经允许的入侵均违法！！！')
 
     // $.snackbar(options);
 }
