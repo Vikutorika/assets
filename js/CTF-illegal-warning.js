@@ -1,15 +1,7 @@
-// var options =  {
-//     content: "你正在浏览CTF相关内容，请注意：所有未经允许的入侵均违法！！！（点击本通知以隐藏）", // text of the snackbar
-//     style: "toast", // add a custom class to your snackbar
-//     timeout: 0, // time in milliseconds after the snackbar autohides, 0 is disabled
-//     htmlAllowed: true, // allows HTML as content value
-//     onClose: function(){ } // callback called when the snackbar gets closed.
-// }
-
-var $ = document.getElementById("Snackbar");
-
-if (window.location.pathname.includes('CTF')){
-    alert('看起来你正在浏览CTF相关内容\n请注意：未经允许的入侵均违法！！！\n（点确定继续）')
-
-    // $.snackbar(options);
+var response = confirm('看起来您正在访问CTF相关内容\n请注意：所有未经允许的入侵均违法！！！\n您是否已经理解在进行CTF相关操作时需要遵守相关的法律法规？\n如果您已经理解，请点击确定按钮，否则点击取消返回首页！')
+if (response) {
+    undefined;
+}
+else {
+    window.location.href = 'https://bili33.top';
 }
