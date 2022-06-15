@@ -5,6 +5,6 @@ if (window.location.pathname.includes("CTF")) {
   if (response) {
     undefined;
   } else {
-    window.location = "//" + document.domain;
+    window.location = window.location.origin;
   }
 }
