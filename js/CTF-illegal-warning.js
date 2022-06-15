@@ -6,7 +6,7 @@ var options =  {
     onClose: function(){ } // callback called when the snackbar gets closed.
 }
 
-var $ = document.getElementById("snackbar");
+var $ = document.getElementById("Snackbar");
 
 if (window.location.pathname.includes('CTF')){
     //alert('你正在浏览CTF相关内容，请注意：未经允许的入侵均违法！！！')
