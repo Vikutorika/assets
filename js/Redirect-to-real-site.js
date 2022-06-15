@@ -1,5 +1,6 @@
 var domain = document.domain;
 if (domain != 'localhost' & domain != 'bili33.top' & domain != '127.0.0.1'){ // localhost & 127.0.0.1 for local debugging, bili33.top is my domain
+    alert('看起来您正在访问的网页并非官方网页（即该站站长可能直接使用了我的源码并部署了他自己的网站），请您谅解，我们将为您跳转到原网站。')
     var pathname = window.location.pathname;
     window.location=('http://bili33.top'+pathname);
 }
