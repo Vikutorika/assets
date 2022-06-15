@@ -6,6 +6,6 @@ var options =  {
     onClose: function(){ } // callback called when the snackbar gets closed.
 }
 
-if ('CTF' in window.location.pathname){
+if (window.location.pathname.includes('CTF')){
 $.snackbar(options);
 }
