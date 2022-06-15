@@ -7,5 +7,6 @@ var options =  {
 }
 
 if (window.location.pathname.includes('CTF')){
-$.snackbar(options);
+    alert('你正在浏览CTF相关内容，请注意：未经允许的入侵均违法！！！')
+//$.snackbar(options);
 }
