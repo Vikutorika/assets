@@ -18,12 +18,12 @@ if (window.location.pathname.includes("CTF")) {
 		cancelButtonText: "返回首页",
 		closeOnConfirm: true, 
 		closeOnCancel: false	
-		},
+		}.then(
 		function(isConfirm){ 
 		if (isConfirm) { 
       undefined;
 		} else { 
 			window.location = window.location.origin;
 		} 
-    });
+    }));
 }
