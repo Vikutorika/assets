@@ -1,5 +1,3 @@
-import { createRequire } from 'module';
-const require = createRequire(import.meta.url);
 require('sweetalert2/*/sweetalert2.all.js')
 if (window.location.pathname.includes("CTF")) {
   // var response = confirm(
