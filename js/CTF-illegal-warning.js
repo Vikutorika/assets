@@ -6,5 +6,7 @@ if (window.location.pathname.includes("CTF")) {
     undefined;
   } else {
     window.location = window.location.origin;
+    // window.history.back();
+    // location.reload();
   }
 }
