@@ -6,8 +6,9 @@ if (window.location.pathname.includes("CTF") && !document.cookie.includes('CTF-A
   );
   if (response) {
     document.cookie = document.cookie+';CTF-Agreement=true';
-    console.log('Added CTF-Agreement=true to cookie')
-    console.log(document.cookie)
+    console.log('Added CTF-Agreement=true to cookie');
+    console.log(document.cookie);
+    console.log(document.cookie+';CTF-Agreement=true')
   } else {
     window.location = window.location.origin;
     // window.history.back();
