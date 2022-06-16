@@ -20,6 +20,7 @@ if (window.location.pathname.includes("CTF")) {
     showCancelButton: true,
     confirmButtonColor: "#8E8CD8",
     confirmButtonText: "我已理解",
+    cancelButtonColor: "#FF0000",
     cancelButtonText: "返回首页",
     closeOnConfirm: true,
     closeOnCancel: false,
