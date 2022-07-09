@@ -1,4 +1,5 @@
 domain = document.domain;
+console.clear();
 if (domain == "bili33.top" || domain == "localhost" || domain == "127.0.0.1") {
   log =
     " __    __  __  __    ___   ___          __    \n" +
