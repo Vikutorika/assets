@@ -1,0 +1,18 @@
+name: release
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  release: # Docs: <https://help.github.com/en/articles/events-that-trigger-workflows#release-event-release>
+    types: [published]
+
+jobs:
+  purge-jsdelivr-cache:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: gacts/purge-jsdelivr-cache@v1
+        with:
+          url: |
+            https://cdn.jsdelivr.net/npm/jquery@3.2.0/dist/jquery.js
+            https://cdn.jsdelivr.net/npm/jquery@3.3.0/dist/jquery.min.js
