@@ -23,4 +23,7 @@ else if (domain == 'share4nothing.cf' || domain == 'share4nothing.ml' || domain 
     "\\__/_| |_|\\__,_|_|  \\___| |_|___/  \\__,_|  \\__, |\\___/ \\___/ \\__,_| |_| |_|\\__,_|_.__/|_|\\__|\n" +
 "                                           |___/                 --GamerNoTitle              \n"
 }
+else{
+    log=undefined
+}
 console.log(log);
