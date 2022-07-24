@@ -5,10 +5,13 @@ var domain = document.domain;
 switch (domain) {
   case "bili33.top":
     undefined;
+    break;
   case "127.0.0.1":
     undefined;
+    break;
   case "localhost":
     undefined;
+    break;
   case "blog.ninym.top":
     if (localStorage.getItem("Mirror-Agreement") == null) {
       usemirror = confirm(
@@ -18,6 +21,7 @@ switch (domain) {
         localStorage.setItem("Mirror-Agreement", "true");
       }
     }
+    break;
   case "webcache.googleusercontent.com":
     usecached = confirm(
       "It seems that you are accessing a cached page. Do you want to redirect to the real-time site?"
@@ -27,6 +31,7 @@ switch (domain) {
     } else {
       undefined;
     }
+    break;
   default:
     alert(
       "看起来您正在访问的网页 " +
