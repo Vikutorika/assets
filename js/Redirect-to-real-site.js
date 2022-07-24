@@ -23,9 +23,12 @@ switch (domain) {
       if (usemirror) {
         localStorage.setItem("Mirror-Agreement", "true");
       }
+    } else {
+      break;
     }
     break;
   }
+
   case "webcache.googleusercontent.com": {
     usecached = confirm(
       "It seems that you are accessing a cached page. Do you want to redirect to the real-time site?"
