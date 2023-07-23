@@ -6,7 +6,7 @@ set "versionField=version"
 
 :upload
 echo Pulling changes from the remote repository...
-::git pull
+git pull
 
 echo Checking for local changes...
 git status | find /i "nothing to commit, working tree clean" > nul
